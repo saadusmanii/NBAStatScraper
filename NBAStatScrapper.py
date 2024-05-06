@@ -28,7 +28,7 @@ for y  in years:
         df  = pd.concat([df, temp_df3], axis = 0)
         print(f'Finished scrapping data for the {y} {s}.')
         lag = np.random.uniform(low = 5,high = 15)
-        print(f'....waiting{round(lag,1)} seconds')
+        print(f'....waiting {round(lag,1)} seconds')
         time.sleep(lag)
 
 print(f'Process completed! Total runtime: {round((time.time()-begin_loop)/60,2)}')
